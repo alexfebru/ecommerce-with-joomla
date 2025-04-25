@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_ECWID_ECWID_VIEW_DEFAULT_TITLE" option="COM_ECWID_ECWID_VIEW_DEFAULT_OPTION">
+        <message>
+            <![CDATA[COM_ECWID_ECWID_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+
+    <fields name="params" addfieldpath="/components/com_ecwid/models/fields">
+        <fieldset name="ecwidBasic" label="COM_ECWID_BASIC_FIELDSET_LABEL">
+            <field name="storeID" type="StoreIdForMenuItem" label="COM_ECWID_GENERAL_STORE_ID" disabled="1"/>
+
+            <field name="defaultCategory" type="text"
+                   label="COM_ECWID_ADVANCED_DEFAULT_CATEGORY_ID_LABEL" default="0" />
+
+            <field name="note" type="note" label="COM_ECWID_FIND_MORE_OPTIONS" />
+
+        </fieldset>
+    </fields>
+</metadata>

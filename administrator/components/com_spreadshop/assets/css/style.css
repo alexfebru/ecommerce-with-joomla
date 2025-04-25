@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500,700');
+
+/* Plugin window */
+.spreadShopAdminWrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    min-height: 680px;
+
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444 !important;
+}
+
+.spreadShopAdminWrapper h1,
+.spreadShopAdminWrapper h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.settingsContainer{
+    position: relative;
+    min-height: 640px;
+
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+}
+
+.settingsContainer .left{
+    width: 50%;
+    max-width: 600px;
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+
+    background-image: url("../images/spreadshop-plugin-screen.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+.settingsContainer .right{
+    width: calc(100% - 680px);
+    position: relative;
+    right: 40px;
+
+    margin: auto 0 auto auto;
+    padding: 30px 0 45px;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+@media (max-width: 1240px) {
+
+    .settingsContainer .right{
+        width: calc(50% - 80px);
+    }
+}
+@media (max-width: 600px) {
+
+    .settingsContainer .left {
+        position: relative;
+        width: 100%;
+        height: 190px;
+    }
+
+    .settingsContainer .right {
+        width: calc(100% - 40px);
+        height: calc(100% - 80px);
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Configuration table */
+.edittable{
+    position: relative;
+}
+
+.field-label > label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #444;
+}
+
+.field-input > input,
+.field-input > select {
+    font-weight: bold;
+}
+
+.field-input > input[type="checkbox"]{
+    position: relative;
+    top: -10px;
+    margin-top: 0;
+}
+
+.field-description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spreadShopAdminWrapper .button-primary,
+.spreadShopAdminWrapper .btn-primary {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    height: 41px;
+
+    margin: 15px auto 0;
+    padding: 6px 12px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+
+    background-color: #ffa64c;
+
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.spreadShopAdminWrapper .button-primary:hover,
+.spreadShopAdminWrapper .btn-primary:hover,
+.spreadShopAdminWrapper .button-primary:active,
+.spreadShopAdminWrapper .btn-primary:active
+{
+    color: #fff;
+    background-color: #ff8c17;
+    transition: all ease 0.2s;
+}
+
+.spreadShopAdminWrapper .button-grey,
+.spreadShopAdminWrapper .btn-grey {
+    display: inline-block;
+    width: calc(100% - 4px);
+    max-width: 200px;
+
+    margin: 15px auto 0;
+    padding: 6px 12px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    color: #555;
+    background-color: #ffffff;
+
+    border: 2px solid #aaaaaa;
+    border-radius: 3px;
+    cursor: pointer;
+
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.spreadShopAdminWrapper .button-grey:hover,
+.spreadShopAdminWrapper .btn-grey:hover,
+.spreadShopAdminWrapper .button-grey:active,
+.spreadShopAdminWrapper .btn-grey:active
+{
+    color: #ff8c17;
+    background-color: #ffffff;
+    border-color: #ff8c17;
+    transition: all ease 0.2s;
+}
+
+.spreadShopAdminWrapper .btn-secondary {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+    background: transparent;
+    cursor: pointer;
+
+    border-bottom: 1px solid #444;
+
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.spreadShopAdminWrapper .btn-secondary:hover,
+.spreadShopAdminWrapper .btn-secondary:active {
+    color: #ff8c17!important;
+    border-bottom: 1px solid #ff8c17;
+}
+
+.btn-secondary-container + p.submit {
+    margin-top: 10px;
+}
+
+.btn-secondary-container .btn-secondary {
+    margin: 20px 0 0 0;
+}
+
+input[type="submit"] {
+    margin-top: 0 !important;
+    padding: 8px 5px 10px !important;
+    top: -1px;
+    position: relative;
+    border-radius: 2px !important;
+}
+
+.shopInfoContainer{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.shopInfoContainer h2{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.settingsContainer .submit{
+    text-align: center;
+}
+
+.shopSettingsContainer{
+    width: 565px;
+    margin: 0 auto ;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.shopSettingsContainer th + td,
+.shopSettingsContainer__settings-edit  th + td {
+    text-align: right;
+}
+
+.shopSettingsContainer__settings-edit {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.shopSettings__heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.shopSettings__subheading {
+    padding-top: 5px;
+}
+
+.shopSettings__divider {
+    padding-bottom: 5px;
+    border-top: 1px solid grey;
+}
+
+.icon-spreadlogo {
+    background-image: url("../images/spreadlogo_small.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 18px !important;
+}

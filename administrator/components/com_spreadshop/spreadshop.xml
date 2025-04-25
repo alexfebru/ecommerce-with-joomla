@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+	<name>COM_SPREADSHOP</name>
+	<creationDate>October 2017</creationDate>
+	<author>Spreadshirt</author>
+	<authorEmail>shop-plugins@spreadshirt.net</authorEmail>
+	<authorUrl>https://www.spreadshop.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GPLv2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.5.0</version>
+	<description>COM_SPREADSHOP_DESCRIPTION</description>
+
+	<!-- Runs on install/uninstall/update; New in 2.5 -->
+	<scriptfile>script.php</scriptfile>
+
+	<install>	<!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>	<!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<update><!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<!--
+	<updateservers>
+		<server type="extension" priority="1" name="SpreadShop">https://sales.spreadshirt.com/downloads/spreadshop.xml</server>
+	</updateservers>
+	-->
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>spreadshop.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+
+	<!-- Plugin frontend language file -->
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_spreadshop.ini</language>
+	</languages>
+
+	<!-- Administration component -->
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_spreadshop'>COM_SPREADSHOP_MENU</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>spreadshop.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>views</folder>
+			<folder>language</folder>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_spreadshop.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_spreadshop.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

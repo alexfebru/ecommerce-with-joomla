@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="essentials">
+        <field name="id"
+               type="hidden"
+               default="0"
+               label="ID"
+               required="true"
+               readonly="true"
+        />
+        <field name="shop_id"
+               type="text"
+               label='COM_SPREADSHOP_SPREADSHOP_LABEL_SHOPID'
+               description=""
+               size="40"
+               required="true"
+               class="required"
+        />
+        <field name="platform"
+               type="list"
+               id="platform"
+               label="Platform" >
+            <option value="NA">NA</option>
+            <option value="EU">EU</option>
+        </field>
+    </fieldset>
+    <fieldset name="additionals">
+        <field name="starttoken"
+               type="text"
+               label="COM_SPREADSHOP_SHOPDETAIL_LABEL_TOKEN"
+               description="URL tail that leads to your Shop"
+               size="40"
+        />
+        <field  name="metadata"
+                type="checkbox"
+                label="COM_SPREADSHOP_SHOPDETAIL_LABEL_METADATA"
+                default="1"
+        />
+        <field  name="mobile_swipe_menu"
+                type="checkbox"
+                label="COM_SPREADSHOP_SHOPDETAIL_LABEL_MOBILESWIPEMENU"
+                default="0"
+        />
+        <field  name="locale"
+                type="groupedlist"
+                label="COM_SPREADSHOP_SHOPDETAIL_LABEL_REGION">
+                <option value="">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_SELECT</option>
+                <option value="en_US">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_US</option>
+                <option value="en_CA">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_CA</option>
+                <option value="fr_CA">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_FR_CA</option>
+                <option value="en_AU">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_AU</option>
+                <option value="da_DK">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_DA_DK</option>
+                <option value="en_EU">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_EU</option>
+                <option value="en_GB">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_GB</option>
+                <option value="en_IE">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_EN_IE</option>
+                <option value="de_DE">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_DE_DE</option>
+                <option value="de_AT">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_DE_AT</option>
+                <option value="de_CH">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_DE_CH</option>
+                <option value="fr_CH">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_FR_CH</option>
+                <option value="it_CH">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_IT_CH</option>
+                <option value="es_ES">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_ES_ES</option>
+                <option value="fi_FI">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_FI_FI</option>
+                <option value="fr_BE">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_FR_BE</option>
+                <option value="nl_BE">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_NL_BE</option>
+                <option value="nl_NL">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_NL_NL</option>
+                <option value="no_NO">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_NO_NO</option>
+                <option value="pl_PL">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_PL_PL</option>
+                <option value="sv_SE">COM_SPREADSHOP_SHOPDETAIL_LOCALE_OPTION_SV_SE</option>
+        </field>
+    </fieldset>
+</form>
